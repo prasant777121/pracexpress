@@ -3,7 +3,7 @@ const mysql = require('mysql');
 const connection = mysql.createConnection({
     // socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock", // Only in MAMP
     host: "127.0.0.1", // AWS, AZURE
-    database: "database",
+    database: "productdatabase",
     user: "root",
     password: "", // In case of XAMPP, the default password is blank
 });
