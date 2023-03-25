@@ -48,17 +48,17 @@ const Delete=async(req,res)=>{
         res.status(500).send("Server Error");
     }
 }
-const findById=async(req,res)=>{
-    const{id}=req.params;
-    try{
-        const products=await productsModel.findById(id);
-        res.send(products);
-        res.status(200).send("users");
-    }
-    catch(error){
-        console.log(error);
-        res.status(500).send("Server Error");
-    }
-}
+// const findById=async(req,res)=>{
+//     const{id}=req.params;
+//     try{
+//         const products=await productsModel.findById(id);
+//         res.send(products);
+//         res.status(200).send("users");
+//     }
+//     catch(error){
+//         console.log(error);
+//         res.status(500).send("Server Error");
+//     }
+// }
 module.exports={index
-,create,update,findById,Delete}
+,create,update,Delete}

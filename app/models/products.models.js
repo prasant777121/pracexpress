@@ -40,17 +40,17 @@ const Delete=(id)=>{
         })
     })
 }
-const findById = (id) => {
-    return new Promise((resolve, reject) => {
-        sql.query('SELECT * FROM users WHERE id = ?', id, (err, results) => {
-            if(err) {
-                return reject(err);
-            }
-            if(results.length === 0 ) {
-                return reject('product Not Found');
-            }
-            return resolve(results[0]);
-        });
-    });
-}
-module.exports={findAll,create,update,Delete,findById}
+// const findById = (id) => {
+//     return new Promise((resolve, reject) => {
+//         sql.query('SELECT * FROM users WHERE id = ?', id, (err, results) => {
+//             if(err) {
+//                 return reject(err);
+//             }
+//             if(results.length === 0 ) {
+//                 return reject('product Not Found');
+//             }
+//             return resolve(results[0]);
+//         });
+//     });
+// }
+module.exports={findAll,create,update,Delete}

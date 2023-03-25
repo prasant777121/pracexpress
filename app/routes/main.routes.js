@@ -3,6 +3,7 @@ module.exports = app => {
     const router = express.Router();
 
     require('./products.routes.js')(app, router);
+    require('./users.routes.js')(app, router);
 
  
 
